@@ -1,0 +1,8 @@
+.list_container {
+  box-sizing: border-box;
+  width: 600px;
+  box-shadow: 2px 4px 8px gray;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
