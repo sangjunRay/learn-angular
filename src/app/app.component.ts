@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'searchAngular';
+  title = '앵귤러 이해';
   ray = 'ray'
 }
