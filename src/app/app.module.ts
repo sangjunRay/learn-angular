@@ -7,6 +7,7 @@ import { AdBannerAppComponent } from './ad-banner/ad-banner-app.component';
 import {AdBannerContainerComponent} from "./ad-banner/ad-banner-container.component";
 import {AdDirective} from "./ad-banner/ad-banner.directive";
 import {AdService} from "./ad-banner/ad-banner.service";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,11 @@ import {AdService} from "./ad-banner/ad-banner.service";
     AdDirective,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: '', component: HeroParentsComponent},
+      {path: 'banner', component: AdBannerAppComponent}
+    ])
   ],
   providers: [AdService],
   bootstrap: [AppComponent]

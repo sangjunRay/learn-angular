@@ -6,7 +6,8 @@ import {AdService} from "./ad-banner.service";
   selector: 'app-ad-banner',
   template: `
     <div>
-      <app-ad-banner-container [ads]="ads"></app-ad-banner-container>
+      <app-ad-banner-container adHost [ads]="ads"></app-ad-banner-container>
+      <app-hero-parents></app-hero-parents>
     </div>
   `,
   styleUrls: ['./ad-banner.component.css']
@@ -18,7 +19,7 @@ export class AdBannerAppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.ads = this.adService.getAds();
+    this.ads = this.adService.getAds(3000);
   }
 
 }

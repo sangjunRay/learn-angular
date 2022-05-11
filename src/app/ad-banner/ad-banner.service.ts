@@ -4,7 +4,7 @@ import {HeroJobAdComponent} from "./hero-job-ad.component";
 
 @Injectable()
 export class AdService {
-  getAds() {
+  getAds(number: number) {
     return [
       new AdItem(
         HeroJobAdComponent,
