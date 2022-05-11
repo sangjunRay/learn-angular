@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '앵귤러 이해';
-  ray = 'ray'
+  title = '앵귤러의 이해';
+  ray = 'Ray'
 }

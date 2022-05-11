@@ -1,5 +1,6 @@
-enum Gender {
-  M,F
+export enum Gender {
+  M= '그의',
+  F= '그 녀의'
 }
 
 export interface Hero {
@@ -10,12 +11,12 @@ export interface Hero {
 }
 
 export const HEROES = [
-  {name: 'Ray', guild:'Front-end', mbti: 'ENTP', gender: 0},
-  {name: 'Mila', guild:'Front-end', mbti: 'INTJ', gender: 1},
-  {name: 'Jerry', guild:'Front-end', mbti: 'ENTJ', gender: 0},
-  {name: 'Sunny', guild:'Front-end', mbti: 'INTJ', gender: 1},
-  {name: 'Jhon', guild:'Back-end', mbti: "INTJ", gender: 0},
-  {name: 'Woody', guild:'Back-end', mbti: 'ENTJ', gender: 0},
-  {name: 'Martin', guild:'Front-end', mbti: 'ISTP', gender: 0},
-  {name: 'Jim', guild:'CTO', mbti: 'INTP', gender: 0},
+  {name: 'Ray', guild:'Front-end', mbti: 'ENTP', gender: Gender.M},
+  {name: 'Mila', guild:'Front-end', mbti: 'INTJ', gender: Gender.F},
+  {name: 'Jerry', guild:'Front-end', mbti: 'ENTJ', gender: Gender.M},
+  {name: 'Sunny', guild:'Front-end', mbti: 'INTJ', gender: Gender.F},
+  {name: 'John', guild:'Back-end', mbti: "INTJ", gender: Gender.M},
+  {name: 'Woody', guild:'Back-end', mbti: 'ENTJ', gender: Gender.M},
+  {name: 'Martin', guild:'Front-end', mbti: 'ISTP', gender: Gender.M},
+  {name: 'Jim', guild:'CTO', mbti: 'INTP', gender: Gender.M},
 ];

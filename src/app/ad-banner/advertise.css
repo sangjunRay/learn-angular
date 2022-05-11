@@ -1,0 +1,16 @@
+.img_box {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  transition: 2s;
+  animation: opacity 2s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}

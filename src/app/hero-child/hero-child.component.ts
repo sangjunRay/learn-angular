@@ -1,4 +1,4 @@
-import {Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Hero} from "../hero";
 
 @Component({
@@ -7,6 +7,6 @@ import {Hero} from "../hero";
   styleUrls: ['./hero-child.component.css']
 })
 export class HeroChildComponent {
-  @Input() hero! : Hero;
+  @Input() hero!: Hero;
   @Input('master') masterName = '';
 }
